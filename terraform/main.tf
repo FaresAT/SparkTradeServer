@@ -171,11 +171,6 @@ resource "aws_instance" "app_server" {
   }
 
   provisioner "file" {
-    source      = "requirements.txt"
-    destination = "/tmp/requirements.txt"
-  }
-
-  provisioner "file" {
     source      = "setup.sh"
     destination = "/tmp/setup.sh"
   }
