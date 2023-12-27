@@ -1,0 +1,2 @@
+private_key = "/path/to/private/key/deployer-key"
+public_key = "/path/to/public/key/deployer-key.pub"

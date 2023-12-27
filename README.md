@@ -17,6 +17,8 @@ This command should output two files, a private key and a public key.
 3. Change the file permissions on your private key
 `chmod 400 deployer-key`
 
-### Modify the Terraform Script
-1. Set the `public_key = file(/home/fares/deployer-key.pub)` to the path to your public key.
-2. Set the `private_key = file(/home/fares/deployer-key)` to the path to your private key.
+### Modify the Terraform Variables
+You must edit the terraform.tfvars file to make the following changes.
+
+1. Set the `public_key = "/home/fares/deployer-key.pub"` to the path to your public key.
+2. Set the `private_key = "/home/fares/deployer-key"` to the path to your private key.

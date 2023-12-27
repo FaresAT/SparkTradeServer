@@ -7,7 +7,10 @@ git clone https://github.com/FaresAT/SparkTradeServer.git /home/ubuntu/API
 
 cd /home/ubuntu/API
 
-sudo pip3 install -r requirements.txt
+sudo apt-get update
+sudo apt-get update
+
+sudo pip install -r requirements.txt
 
 # Start the Flask application
 nohup python3 login.py &
